@@ -5,7 +5,7 @@
         <img [src]="character.image" class="card-img-top" alt="imagen character">
         <div class="card-body">
           <h5 class="card-title">{{ character.name | json }}</h5>
-          <a href="#" class="btn btn-warning d-flex justify-content-center">See more</a>
+          <a [routerLink]="['/detalles', character.id]" class="btn btn-warning d-flex justify-content-center">See more</a>
         </div>
       </div>
     </div>
